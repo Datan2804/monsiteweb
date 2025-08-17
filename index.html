@@ -13,3 +13,115 @@
 
 </body>
 </html>
+<section id="accueil">
+  <h2>Accueil</h2>
+  <p>Bienvenue sur mon site !</p>
+</section>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>Voici quelques infos sur moi...</p>
+</section>
+
+<section id="contact"><nav>
+  <a href="#accueil">Accueil</a> |
+  <a href="#apropos">À propos</a> |
+  <a href="#contact">Contact</a>
+</nav>
+
+  <h2>Contact</h2>
+  <p>Mon email : exemple@email.com</p>
+</section>
+<button onclick="alert('Tu as cliqué sur le bouton 1 !')">Bouton 1</button>
+<button onclick="alert('Tu as cliqué sur le bouton 2 !')">Bouton 2</button>
+<!-- Bouton hamburger -->
+<div id="menuToggle">
+  <input type="checkbox" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <ul id="menu">
+    <li><a href="#accueil">Accueil</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Sections de la page -->
+<section id="accueil">
+  <h2>Accueil</h2>
+  <p>Bienvenue sur mon site !</p>
+</section>
+
+<section id="apropos">
+  <h2>À propos</h2>
+  <p>Voici quelques infos sur moi...</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Mon email : exemple@email.com</p>
+</section>
+/* Menu hamburger */
+#menuToggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* caché mais clicable */
+  z-index: 200;
+}
+
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  background: darkgreen;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#menu {
+  position: fixed;
+  width: 200px;
+  left: -220px; /* caché à gauche */
+  top: 0;
+  height: 100%;
+  background: #e0ffe0;
+  padding-top: 50px;
+  list-style-type: none;
+  transition: all 0.3s ease;
+}
+
+#menu li {
+  padding: 15px;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+#menuToggle input:checked ~ #menu {
+  left: 0; /* menu visible quand coché */
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  margin-left: 50px; /* éviter que le menu cache le contenu */
+  border-bottom: 1px solid #ccc;
+}
