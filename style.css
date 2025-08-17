@@ -1,0 +1,28 @@
+body {
+  background-color: #FFF38F; /* couleur de fond */
+  font-family: Arial, sans-serif; /* police du texte */
+  margin: 40px; /* marges autour */
+}
+
+h1 {
+  color: #8FCCFF; /* couleur du titre */
+  text-align: center; /* centrer le titre */
+}
+
+p {
+  color: #333333; /* couleur du texte */
+  font-size: 18px; /* taille du texte */
+}
+button {
+  background-color: darkgreen;  /* couleur du bouton */
+  color: white;                 /* couleur du texte */
+  padding: 10px 20px;           /* espace autour du texte */
+  border: none;                 /* supprime la bordure par défaut */
+  border-radius: 5px;           /* coins arrondis */
+  font-size: 16px;              /* taille du texte */
+  cursor: pointer;              /* change le curseur au survol */
+}
+
+button:hover {
+  background-color: lightgreen; /* couleur au survol */
+}
